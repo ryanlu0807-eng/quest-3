@@ -7,16 +7,16 @@
 </head>
 <body>
     <div>
-        <img src="i/hangman6.gif" alt="pic of hangman">
+        <img id="hangmanpic" src="i/hangman6.gif" alt="Picture of Hangman">
     </div>
-    <div> Press New Game to play</div>
+    <div id="clue">Press New Game to Play</div>
     <div>
-        <input type ="text" size="1" maxlength="1">
-        <button>Guess</button>
+        <input  id= "guess" type="text" size="-1" maxlength="1"> 
+        <button onclick="guess();" >Guess</button>
     </div>
-    <div>
-        <button>New Game</button>
+    <div id="newgamearea"> 
+        <button onclick="newGame();">New Game</button> 
     </div>
-    
+    <div id="guesses"></div>
 </body>
 </html>
